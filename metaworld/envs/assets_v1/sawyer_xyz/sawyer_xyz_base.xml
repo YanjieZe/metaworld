@@ -16,6 +16,10 @@ Usage:
 <mujoco model="sawyer">
     <camera pos="0 0 3.2" name="topview" />
 
+    <camera mode="fixed" name="cam1" pos="-0.6 0.6 0.5" quat="0.6123724 0.3535534 -0.3535534 -0.6123724" fovy="80"/>
+    <camera mode="fixed" name="cam2" pos="0 1.2 0.5" quat="0 0 0.5 0.8660254" fovy="80"/>
+    <camera mode="fixed" name="cam3" pos="0.25 0.8 0.6" quat="0.3794095 0.0499502 0.1205905 0.9159756" fovy="80"/>
+
     <!--<geom name="floor" type="plane" pos="0 0 -.9" size="10 10 10"-->
           <!--rgba="0 0 0 1" contype="15" conaffinity="15" />-->
     <!--<geom name="tableTop" type="box" pos="0 0.6 -0.45" size="0.4 0.2 0.45"
