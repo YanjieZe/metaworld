@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mujoco>
+    <include file="shared_config.xml"></include>
+
+    <worldbody>
+        <include file="sawyer_xyz_base.xml"></include>
+    </worldbody>
+
+</mujoco>
