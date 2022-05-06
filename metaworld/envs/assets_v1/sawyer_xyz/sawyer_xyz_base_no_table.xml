@@ -20,6 +20,14 @@ Usage:
     <camera mode="fixed" name="cam2" pos="0.3 0.3 0.5" quat="0.8001031 0.4619398 0.1913417 0.3314136" fovy="80"/>
     <camera mode="fixed" name="cam3" pos="0.2 0.7 0.7" quat="0.3794095 0.0499502 0.1205905 0.9159756" fovy="80"/>
 
+    <body name="camera_target" pos="0.2 0.6 0.0">
+        <geom conaffinity="0" contype="0" pos="0 0 0" rgba="1 0 0 0" size="0.0475 0.0475 0.001" type="box"></geom>
+    </body>
+
+    <camera fovy="80" name="camera_front" pos="-0.4 0.6 0.4"  mode="targetbody" target="camera_target" />
+    <camera fovy="80" name="camera_dynamic" pos="0.3 0.2 0.5" mode="targetbody" target="camera_target" />
+
+    
     <!--<geom name="floor" type="plane" pos="0 0 -.9" size="10 10 10"-->
           <!--rgba="0 0 0 1" contype="15" conaffinity="15" />-->
     <!--<geom name="tableTop" type="box" pos="0 0.6 -0.45" size="0.4 0.2 0.45"
